@@ -1,0 +1,153 @@
+/* body{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     
+}
+
+
+#content{
+        box-shadow: 0 10px 12px rgb(180, 180, 180);
+    background-color: aliceblue;
+     width: 300px;
+     height: 250px;
+     padding: 25px 20px;
+     padding-bottom: 5px;
+     
+    
+    
+   
+}
+
+#question h3, #option h3{
+    font-size: 17px;
+}
+
+
+
+#buttons button{
+     background-color: rgb(136, 214, 214);
+    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+}
+
+ #submit:hover, #next:hover, #back:hover{
+    background-color: rgb(13, 130, 130);
+ }
+
+ #submit:active, #next:active, #back:active{
+    transform: translateY(2px);
+ } */
+
+ /* Apply a base style to body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Container holding everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;  /* Keeps it from stretching too wide */
+}
+
+/* Quiz content box */
+#content {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Question text */
+#question h3, 
+#options h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Buttons container */
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap; /* lets buttons move on small screens */
+}
+
+/* Button styling */
+#buttons button {
+    background-color: rgb(136, 214, 214);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1; /* buttons stretch evenly */
+    min-width: 80px;
+}
+
+#submit:hover, #next:hover, #back:hover {
+    background-color: rgb(13, 130, 130);
+}
+
+#submit:active, #next:active, #back:active {
+    transform: translateY(2px);
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    #content {
+        padding: 15px;
+    }
+
+    #question h3, #options h3 {
+        font-size: 16px;
+    }
+
+    #buttons button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    #question h3, #options h3 {
+        font-size: 14px;
+    }
+
+    #buttons {
+        flex-direction: column; /* stack buttons */
+    }
+
+    #buttons button {
+        width: 100%; /* full-width buttons */
+    }
+}
