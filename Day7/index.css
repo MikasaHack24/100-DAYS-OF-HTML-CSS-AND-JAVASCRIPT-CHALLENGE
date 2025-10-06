@@ -1,0 +1,60 @@
+.delete-btn{
+     background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  padding: 0 2px;
+}
+
+.delete-btn:hover {
+  background-color: #d9534f;
+  transform: scale(1.1);
+}
+
+.delete-btn:active{
+     transform: translateY(2px);
+}
+
+#add{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(149, 214, 214);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+#add:hover{
+    background-color: rgb(87, 127, 127); 
+    color: white;
+}
+
+#add:active{
+    transform: translateY(2px);
+}
+
+#task{
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#tasklist div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* space between rows */
+}
+
+
+#tasklist label{
+    font-size: 30px;
+}
