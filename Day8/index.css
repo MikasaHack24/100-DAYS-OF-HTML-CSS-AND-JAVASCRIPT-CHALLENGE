@@ -1,0 +1,30 @@
+body{
+
+    text-align: center;
+    background-color: black;
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#hours, #minutes, #seconds{
+    font-size: 300px;
+    color: #196919;
+    text-shadow:  
+    0 0 5px #138113,
+    0 0 5px #28e628,
+    0 0 10px #00ff00,
+    0 0 40px #00ff00;
+}
+
+#date{
+    font-size: 70px;
+    color: #196919;
+}
+    
+
