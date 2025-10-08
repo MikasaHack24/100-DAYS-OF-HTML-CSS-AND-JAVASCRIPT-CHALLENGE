@@ -1,15 +1,121 @@
-body{
+/* body{
 
     text-align: center;
-    background-color: black;
      display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-    /* justify-content: center;
-    align-items: center; */
+} */
+
+/* Import a premium, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8fafc, #e3f2fd);
+  color: #2c3e50;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main section styling */
+.time-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  background: #fff;
+  max-width: 900px;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+.time-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.time-section h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.time-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #546e7a;
+  margin-bottom: 25px;
+}
+
+/* Intro paragraph */
+.intro {
+  font-size: 1.1rem;
+  color: #37474f;
+  margin-bottom: 40px;
+}
+
+/* Feature boxes */
+.feature {
+  background: #f1f8ff;
+  border: 1px solid #e0f0ff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  background: #e3f2fd;
+  transform: scale(1.02);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 40px 20px;
+  }
+
+  .time-section h1 {
+    font-size: 2rem;
+  }
+
+  .time-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .time-section p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+#showClock{
+    display: none;
+    text-align: center;
 }
 
 #hours, #minutes, #seconds{
@@ -26,5 +132,60 @@ body{
     font-size: 70px;
     color: #196919;
 }
-    
 
+#showStopwatch{
+    display: none;
+    text-align: center;
+    font-size: 200px;
+    color: #138113;
+}
+
+#start, #pause, #reset{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #138113;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#start:active, #pause:active, #reset:active{
+    transform: translateY(2px);
+}
+
+#start:hover, #pause:hover, #reset:hover{
+    background-color: #00ff00;
+    color: white;
+}
+
+.myClock, .myStopwatch{
+    width: 90px;
+    height: 40px;
+    background-color: #138113;
+    border-radius: 5px;
+}
+
+#toggle {
+  margin-top: 10px; /* adjust to bring it closer or farther */
+}
+
+#stopwatch button {
+  margin: 5px;
+}
+
+.toggle {
+  margin-top: 10px;
+}
+
+/* --- Fade animation classes --- */
+.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}

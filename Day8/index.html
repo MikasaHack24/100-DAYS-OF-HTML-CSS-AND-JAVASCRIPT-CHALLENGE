@@ -8,19 +8,83 @@
     </head>
     <body>
 
-        <div class="time">
-            <span id="hours"></span>
-            <span id="minutes"></span>
-            <span id="seconds"></span><br>
+        <section class="time-section">
+  <div class="content-wrapper">
+    <h1>Clock & Stopwatch</h1>
+    <p class="intro">
+      Time powers everything we do — from managing schedules to tracking achievements. 
+      This page combines a sleek digital clock and an accurate stopwatch, giving you full control over how you track each moment.
+    </p>
+
+    <div class="feature">
+      <h2>🕒 Digital Clock</h2>
+      <p>
+        Stay in sync with the current time, displayed in real-time. 
+        Designed with precision and elegance, the digital clock automatically updates every second — 
+        so you’re always right on time.<br>
+         <button class="myClock">Clock</button>
+      </p>
+    </div>
+
+    <div class="feature">
+      <h2>⏱️ Stopwatch</h2>
+      <p>
+        Measure time with accuracy and ease. Start, stop, and reset your stopwatch effortlessly — 
+        whether you’re timing workouts, projects, or personal goals.<br>
+        <button class="myStopwatch">Stopwatch</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+        
+
+        <div id="showClock">
+             <div class="time">
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span><br>
+
+             </div>
+
+             <div id="date">
+                <span id="day"></span>
+                <span id="monthName"></span>
+                <span id="year"></span><br><br>
+             </div>
+
+             <div id="toggle">
+             <button class="myClock">Clock</button>
+           <button class="myStopwatch">Stopwatch</button>
+           
 
         </div>
+        </div>
 
-         <div id="date">
-            <span id="day"></span>
-            <span id="monthName"></span>
-            <span id="year"></span><br>
-         </div>
+       
 
+
+
+      <div id="showStopwatch">
+           <div id="stopwatch">
+            <span id="sw-hours">00:</span>
+            <span id="sw-minutes">00:</span>
+            <span id="sw-seconds">00</span><br>
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+           <div class="toggle">
+
+             <button class="myClock">Clock</button>
+           <button class="myStopwatch">Stopwatch</button>
+        </div>
+           </div>
+
+
+      </div>
+        
 
 
 
