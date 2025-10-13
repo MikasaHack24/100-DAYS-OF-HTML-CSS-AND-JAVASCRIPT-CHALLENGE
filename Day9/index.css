@@ -1,0 +1,60 @@
+.Clock{
+    display: block;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: relative;
+}
+
+
+.numbers{
+    position: absolute;
+    transform-origin: bottom center;
+    top: 50%;
+    left: 50%;
+}
+
+.numbers:nth-child(1) { transform: rotate(30deg) translateY(-93px) rotate(-30deg); }
+.numbers:nth-child(2) { transform: rotate(60deg) translateY(-90px) rotate(-60deg); }
+.numbers:nth-child(3) { transform: rotate(90deg) translateY(-87px) rotate(-90deg); }
+.numbers:nth-child(4) { transform: rotate(120deg) translateY(-83px) rotate(-120deg); }
+.numbers:nth-child(5) { transform: rotate(150deg) translateY(-81px) rotate(-150deg); }
+.numbers:nth-child(6) { transform: rotate(180deg) translateY(-80px) rotate(-180deg); }
+.numbers:nth-child(7) { transform: rotate(210deg) translateY(-85px) rotate(-210deg); }
+.numbers:nth-child(8) { transform: rotate(240deg) translateY(-90px) rotate(-240deg); }
+.numbers:nth-child(9) { transform: rotate(270deg) translateY(-90px) rotate(-270deg); }
+.numbers:nth-child(10) { transform: rotate(300deg) translateY(-95px) rotate(-300deg); }
+.numbers:nth-child(11) { transform: rotate(330deg) translateY(-100px) rotate(-330deg); }
+.numbers:nth-child(12) { transform: rotate(360deg) translateY(-97px) rotate(-360deg); }
+
+.hour-hand, .minute-hand, .second-hand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.hour-hand{
+    height: 50px;
+    width: 5px;
+    transform: translate(-50%, -100%) rotate(0deg); 
+}
+.minute-hand{
+    height: 70px;
+    width: 3px;
+    transform: translate(-50%, -100%) rotate(90deg); 
+}
+.second-hand{
+    height: 90px;
+    width: 1px;
+    background-color: red;
+    transform: translate(-50%, -100%) rotate(180deg); 
+}
+
+
+
+
